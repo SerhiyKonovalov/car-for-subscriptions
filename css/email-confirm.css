@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Обнулення*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -101,19 +101,15 @@ body {
   text-transform: uppercase;
   color: #fff;
   background: rgba(46, 111, 208, 0.9);
-  border-radius: 10px; }
-  @media (max-width: 991.98px) {
-    .blue-button {
-      font-size: 18px; } }
-  @media (max-width: 767.98px) {
-    .blue-button {
-      font-size: 16px; } }
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
   @media (max-width: 575.98px) {
     .blue-button {
-      font-size: 14px; } }
+      font-size: 18px; } }
   @media (max-width: 479.98px) {
     .blue-button {
-      font-size: 12px; } }
+      font-size: 16px; } }
 
 .blue-button:hover {
   background: #2869ca; }
@@ -129,7 +125,7 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 9px;
-  margin: 40px 0px 50px 0px;
+  margin: 40px 0px 70px 0px;
   padding: 0 33px; }
   @media (max-width: 991.98px) {
     .header__navbar {
@@ -260,155 +256,227 @@ body {
   background: none; }
 
 /****************
-*****Answers*****
+*****Confirm*****
 *****************/
-.answers {
-  margin-bottom: 160px; }
-  @media (max-width: 1199.98px) {
-    .answers {
-      margin-bottom: 120px; } }
-  @media (max-width: 991.98px) {
-    .answers {
-      background: none;
-      margin-bottom: 100px; } }
-  @media (max-width: 767.98px) {
-    .answers {
-      margin-bottom: 80px; } }
+.confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 67px; }
   @media (max-width: 575.98px) {
-    .answers {
+    .confirm {
       margin-bottom: 60px; } }
   @media (max-width: 479.98px) {
-    .answers {
-      margin-bottom: 40px; } }
+    .confirm {
+      margin-bottom: 50px; } }
   @media (max-width: 379.98px) {
-    .answers {
-      margin-bottom: 30px; } }
-  .answers__title {
-    margin-bottom: 50px; }
-    @media (max-width: 991.98px) {
-      .answers__title {
-        margin-bottom: 35px; } }
-    @media (max-width: 767.98px) {
-      .answers__title {
-        margin-bottom: 25px; } }
-    @media (max-width: 575.98px) {
-      .answers__title {
-        margin-bottom: 20px; } }
-    @media (max-width: 479.98px) {
-      .answers__title {
-        margin-bottom: 15px; } }
-    @media (max-width: 379.98px) {
-      .answers__title {
-        margin-bottom: 10px; } }
-    .answers__title h2 {
-      font-size: 36px;
-      line-height: 44px;
-      margin: 0;
-      text-align: center; }
-      @media (max-width: 991.98px) {
-        .answers__title h2 {
-          font-size: 30px; } }
-      @media (max-width: 767.98px) {
-        .answers__title h2 {
-          font-size: 26px; } }
-      @media (max-width: 575.98px) {
-        .answers__title h2 {
-          font-size: 24px; } }
-      @media (max-width: 479.98px) {
-        .answers__title h2 {
-          font-size: 22px; } }
-      @media (max-width: 379.98px) {
-        .answers__title h2 {
-          font-size: 19.5px; } }
-  .answers__accordion {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: url(../img/questions/svg/bg.svg) no-repeat 0 50%; }
-  .answers__item {
-    width: 74.1%;
-    background: #F9F9F9;
-    border: 2px solid #437DD5 !important;
+    .confirm {
+      margin-bottom: 40px; } }
+  .confirm__block {
+    background: rgba(249, 249, 249, 0.3);
+    border: 2px solid #437DD5;
+    border-radius: 20px;
     -webkit-box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 20px !important;
-    margin-bottom: 16px; }
-    @media (max-width: 991.98px) {
-      .answers__item {
-        width: 100%; } }
+    padding: 45px 40px 60px 40px;
+    margin-bottom: 62px; }
+    @media (max-width: 767.98px) {
+      .confirm__block {
+        padding: 40px 35px 40px 35px;
+        margin-bottom: 50px; } }
     @media (max-width: 575.98px) {
-      .answers__item {
-        margin-bottom: 14px; } }
+      .confirm__block {
+        padding: 25px 30px 30px 30px;
+        margin-bottom: 40px; } }
     @media (max-width: 479.98px) {
-      .answers__item {
-        margin-bottom: 12px; } }
+      .confirm__block {
+        padding: 20px 25px 25px 25px; } }
     @media (max-width: 379.98px) {
-      .answers__item {
-        margin-bottom: 10px; } }
-    .answers__item button {
+      .confirm__block {
+        padding: 20px 20px 25px 20px;
+        margin-bottom: 30px; } }
+  .confirm__title {
+    margin-bottom: 30px; }
+    @media (max-width: 767.98px) {
+      .confirm__title {
+        margin-bottom: 25px; } }
+    @media (max-width: 575.98px) {
+      .confirm__title {
+        margin-bottom: 20px; } }
+    @media (max-width: 379.98px) {
+      .confirm__title {
+        margin-bottom: 15px; } }
+    .confirm__title h2 {
       font-size: 24px;
       line-height: 29px;
-      padding: 29px 40px;
-      background: #F9F9F9;
-      border-radius: 20px !important; }
-      @media (max-width: 991.98px) {
-        .answers__item button {
-          font-size: 22px; } }
+      font-weight: 600;
+      color: #262626;
+      text-align: center; }
       @media (max-width: 767.98px) {
-        .answers__item button {
-          font-size: 20px;
-          padding: 25px 35px;
-          line-height: 26px; } }
+        .confirm__title h2 {
+          font-size: 22px; } }
       @media (max-width: 575.98px) {
-        .answers__item button {
-          font-size: 18px;
-          padding: 20px 30px; } }
+        .confirm__title h2 {
+          font-size: 20px;
+          line-height: 26px; } }
       @media (max-width: 479.98px) {
-        .answers__item button {
-          font-size: 16px;
-          padding: 15px 25px;
+        .confirm__title h2 {
           line-height: 24px; } }
       @media (max-width: 379.98px) {
-        .answers__item button {
-          padding: 10px 20px;
-          line-height: 22px; } }
-  .answers__item:last-child {
-    margin-bottom: 0; }
-  .answers__accordion-text {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 25px;
-    padding: 20px 38px 20px 38px; }
-    @media (max-width: 991.98px) {
-      .answers__accordion-text {
-        font-size: 17px;
-        padding: 15px 30px 15px 30px; } }
+        .confirm__title h2 {
+          font-size: 18px; } }
+  .confirm__text {
+    margin-bottom: 23px; }
     @media (max-width: 767.98px) {
-      .answers__accordion-text {
-        font-size: 16px;
-        padding: 15px 25px 15px 25px; } }
+      .confirm__text {
+        margin-bottom: 20px; } }
     @media (max-width: 575.98px) {
-      .answers__accordion-text {
-        font-size: 14px;
-        padding: 12px 22px 12px 22px;
-        line-height: 22px; } }
-    @media (max-width: 479.98px) {
-      .answers__accordion-text {
-        font-size: 13px;
-        padding: 10px 20px 10px 20px;
-        line-height: 20px; } }
+      .confirm__text {
+        margin-bottom: 18px; } }
     @media (max-width: 379.98px) {
-      .answers__accordion-text {
-        font-size: 12px;
-        padding: 8px 15px 8px 15px;
-        line-height: 18px; } }
+      .confirm__text {
+        margin-bottom: 15px; } }
+    .confirm__text p {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center; }
+      @media (max-width: 767.98px) {
+        .confirm__text p {
+          font-size: 18px; } }
+      @media (max-width: 575.98px) {
+        .confirm__text p {
+          font-size: 17px;
+          line-height: 22px; } }
+      @media (max-width: 479.98px) {
+        .confirm__text p {
+          line-height: 20px; } }
+      @media (max-width: 379.98px) {
+        .confirm__text p {
+          font-size: 16px; } }
+      .confirm__text p span {
+        display: block; }
+        @media (max-width: 479.98px) {
+          .confirm__text p span {
+            display: inline; } }
+  .confirm__spam {
+    margin-bottom: 34px; }
+    @media (max-width: 767.98px) {
+      .confirm__spam {
+        margin-bottom: 30px; } }
+    @media (max-width: 575.98px) {
+      .confirm__spam {
+        margin-bottom: 25px; } }
+    @media (max-width: 479.98px) {
+      .confirm__spam {
+        margin-bottom: 20px; } }
+    @media (max-width: 379.98px) {
+      .confirm__spam {
+        margin-bottom: 15px; } }
+    .confirm__spam p {
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center; }
+      .confirm__spam p span {
+        display: block; }
+  .confirm__form {
+    padding: 0 20px;
+    margin-bottom: 28px; }
+    @media (max-width: 767.98px) {
+      .confirm__form {
+        margin-bottom: 25px; } }
+    @media (max-width: 575.98px) {
+      .confirm__form {
+        padding: 0 15px;
+        margin-bottom: 20px; } }
+    @media (max-width: 479.98px) {
+      .confirm__form {
+        padding: 0 12px; } }
+    @media (max-width: 379.98px) {
+      .confirm__form {
+        margin-bottom: 15px;
+        padding: 0 10px; } }
+    .confirm__form label {
+      font-size: 20px;
+      line-height: 24px;
+      display: block;
+      padding-left: 10px;
+      margin-bottom: 6px; }
+      @media (max-width: 767.98px) {
+        .confirm__form label {
+          font-size: 18px;
+          margin-bottom: 5px; } }
+      @media (max-width: 575.98px) {
+        .confirm__form label {
+          font-size: 17px;
+          margin-bottom: 3px;
+          padding-left: 7px; } }
+      @media (max-width: 479.98px) {
+        .confirm__form label {
+          margin-bottom: 2px; } }
+      @media (max-width: 379.98px) {
+        .confirm__form label {
+          font-size: 16px;
+          margin-bottom: 1px; } }
+    .confirm__form input {
+      width: 100%;
+      padding: 10px 18px;
+      font-size: 20px;
+      -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 10px; }
+      @media (max-width: 767.98px) {
+        .confirm__form input {
+          font-size: 18px; } }
+      @media (max-width: 575.98px) {
+        .confirm__form input {
+          font-size: 17px;
+          padding: 10px 15px; } }
+      @media (max-width: 479.98px) {
+        .confirm__form input {
+          padding: 10px 12px; } }
+      @media (max-width: 379.98px) {
+        .confirm__form input {
+          font-size: 16px;
+          padding: 10px 10px; } }
+  .confirm__resend {
+    padding-left: 30px; }
+    @media (max-width: 575.98px) {
+      .confirm__resend {
+        padding-left: 21px; } }
+    @media (max-width: 379.98px) {
+      .confirm__resend {
+        padding-left: 18px; } }
+    .confirm__resend a {
+      font-size: 16px;
+      line-height: 19px;
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+      color: #1C1C1C; }
+      @media (max-width: 767.98px) {
+        .confirm__resend a {
+          font-size: 15px; } }
+      @media (max-width: 575.98px) {
+        .confirm__resend a {
+          font-size: 14px; } }
+      @media (max-width: 379.98px) {
+        .confirm__resend a {
+          font-size: 12.5px; } }
+  .confirm__button a {
+    padding: 13px 26px; }
+    @media (max-width: 479.98px) {
+      .confirm__button a {
+        padding: 12px 24px; } }
+    @media (max-width: 379.98px) {
+      .confirm__button a {
+        padding: 12px 20px; } }
 
 /*****************
 ******Footer****** 
